@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h2>Checkout</h2>
+</header>
+
+<div id="checkout-items" class="cart-container"></div>
+
+<h2 id="final-total" style="text-align:center;"></h2>
+
+<button onclick="placeOrder()" style="display:block; margin:20px auto;">
+    Place Orderr
+</button>
+
+<script src="script.js"></script>
+<script>
+    loadCheckout();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h2>MyStore</h2>
+    <div class="cart-icon" onclick="goToCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+</header>
+
+<div class="products">
+
+    <div class="card">
+        <img src="img/img1.png">
+        <h3>Roblox</h3>
+        <p>₹500</p>
+        <button onclick="addToCart('Roblox', 500)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="img/img2.png">
+        <h3>Breaking </h3>
+        <p>₹800</p>
+        <button onclick="addToCart('Breaking ', 800)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="img/img3.png">
+        <h3>Mirzapur</h3>
+        <p>₹1800</p>
+        <button onclick="addToCart('Mirzapur', 1800)">Add to Cart</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    updateCartCount();
+</script>
+
+</body>
+</html>
